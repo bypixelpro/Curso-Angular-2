@@ -1,0 +1,15 @@
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large; 
+}
+
+.panel-body img.welcome {
+    border-radius: 440px;
+    width: 400px;
+    height: auto;
+    margin-bottom: 21px;
+    margin-top: 21px;
+}

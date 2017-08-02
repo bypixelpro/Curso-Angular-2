@@ -1,0 +1,66 @@
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2">Filtro por:</div>
+            <div class="col-md-4">
+                <input type="text" 
+                    [(ngModel)]="listFilter" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Filtrado por: {{listFilter}}</h3>
+            </div>
+        </div>
+        <div class="table-responsive"
+            *ngIf="courses && courses.length">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <button class="btn btn-primary" (click)='toggleImage();'>
+                                {{ showImage ? 'Ocultar' : 'Mostrar' }} Portada
+                            </button>
+                        </th>
+                        <th>Curso</th>
+                        <th>Código Curso</th>
+                        <th>Disponible</th>
+                        <th>Precio</th>
+                        <th>Valoración</th>
+                        <th>Author</th>
+                        <th>Author URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let course of courses | CourseFilter:listFilter'>
+                        <td>
+                            <img *ngIf="showImage"
+                                [src]="course.imageUrl" 
+                                [title]="course.courseName" 
+                                [style.width.px]="imageWidth" 
+                                [style.margin.px]="imageMargin" />
+                        </td>
+                        <td>
+                            <a [routerLink]="['/curso', course.courseId]">
+                                {{course.courseName}}
+                            </a>
+                        </td>
+                        <td>{{course.courseCode|lowercase}}</td>
+                        <td>{{course.releaseDate}}</td>
+                        <td>{{course.price | currency:'EUR':true:'1.2-2'}}</td>
+                        <td>
+                            <!-- OnRatingClick está en el componente CoursesListComponent y ratingClicked en starComponent -->
+                            <pm-star [rating]='course.starRating' (ratingClicked)="onRatingClicked($event);"></pm-star>
+                        </td>
+                        <td>{{course.author}}</td>
+                        <td><a href="{{course.authorUrl}}" target="_blank">{{course.authorUrl}}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

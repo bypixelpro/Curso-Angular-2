@@ -1,0 +1,62 @@
+[
+    {
+        "courseId": 1,
+        "courseName": "Modulos Prestashop 1.7",
+        "courseCode": "PMP17",
+        "releaseDate": "04 Abril 2017",
+        "price": 89,
+        "description": "Aprende a realizar tus módulos desde cero para Prestashop 1.7.",
+        "starRating": 4.5,
+        "author": "Pixelpro",
+        "imageUrl": "/app/assets/images/modulesPrestashop17.png",
+        "authorUrl": "http://pixelpro.es"
+    },
+    {
+        "courseId": 2,
+        "courseName": "Magento 2",
+        "courseCode": "PM2",
+        "releaseDate": "01 Abril 2017",
+        "description": "Por fín tenemos un fantástico curso de Magento 2 en español",
+        "price": 89.90,
+        "starRating": 4.1,
+        "imageUrl": "/app/assets/images/magento2.png",
+        "author": "Pixelpro",
+        "authorUrl": "http://pixelpro.es"
+    },
+    {
+        "courseId": 3,
+        "courseName": "Máster Wordpress",
+        "courseCode": "PMW",
+        "releaseDate": "02 Febrero 2017",
+        "description": "Todo lo que necesitas saber sobre Wordpress desde la administración hasta la creación de plugins y plantillas desde cero. Conviértete en un experto de la mano de Pixelpro.",
+        "price": 149,
+        "starRating": 4.21,
+        "imageUrl": "/app/assets/images/masterWordpress.png",
+        "author": "Pixelpro",
+        "authorUrl": "http://pixelpro.es"
+    },
+    {
+        "courseId": 4,
+        "courseName": "Hacking",
+        "courseCode": "PMW",
+        "releaseDate": "03 Abril 2017",
+        "description": "Aprende las útlimas técnicas de hacking para proteger tus páginas web.",
+        "price": 68,
+        "starRating": 4.4,
+        "imageUrl": "/app/assets/images/hacking.png",
+        "author": "Pixelpro",
+        "authorUrl": "http://pixelpro.es"
+    },
+    {
+        "courseId": 5,
+        "courseName": "Servidores desde cero",
+        "courseCode": "PMW",
+        "releaseDate": "12 Novienbre 2016",
+        "description": "Instala y gestiona un servidor desde cero.",
+        "price": 68,
+        "starRating": 1.4,
+        "imageUrl": "/app/assets/images/servers.png",
+        "author": "Pixelpro",
+        "authorUrl": "http://pixelpro.es"
+    }
+]
